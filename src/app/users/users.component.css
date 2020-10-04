@@ -1,0 +1,13 @@
+/* Ostyluj tak, aby na stronie użytkownicy wyświetlali się jako kafelki (podpowiedź: użyj
+display, width, height, border, background oraz box-shadow) */
+
+#usersList{
+    display: inline-block;
+    width: 250;
+    height: 100px;
+    border: 2px gray solid;
+    background-color: honeydew;
+    box-shadow: ivory;
+    padding: 10px;
+    margin: 20px;
+}

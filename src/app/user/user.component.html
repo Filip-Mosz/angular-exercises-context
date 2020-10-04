@@ -1,0 +1,15 @@
+<div class="user">
+    <p [appFirstDirective]="'blue'" [backgroundColor]="'yellow'">
+        <span>name: </span>
+        <span>{{ user.name }}</span>
+    </p>
+    <p>
+        <span>phone number: </span>
+        <span>{{user.phone}}</span>
+    </p>
+    <p>
+        <span>email: </span>
+        <span>{{ user.email }}</span>
+    </p>
+    <button (click)="onDeleteButtonClick">!Delete!</button>
+</div>
