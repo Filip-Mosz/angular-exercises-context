@@ -11,3 +11,8 @@ display, width, height, border, background oraz box-shadow) */
     padding: 10px;
     margin: 20px;
 }
+
+.usersContainer {
+    display: flex;
+    flex-wrap: wrap;
+}
