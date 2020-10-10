@@ -9,6 +9,8 @@ import { SetBackgroudDirectiveDirective } from './set-backgroud-directive.direct
 import { ModuloPipe } from './modulo.pipe';
 import { ToUppercasePipe } from './to-uppercase.pipe';
 import { CountriesComponent } from './countries/countries.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -19,10 +21,12 @@ import { CountriesComponent } from './countries/countries.component';
     SetBackgroudDirectiveDirective,
     ModuloPipe,
     ToUppercasePipe,
-    CountriesComponent
+    CountriesComponent,
+    DashboardComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

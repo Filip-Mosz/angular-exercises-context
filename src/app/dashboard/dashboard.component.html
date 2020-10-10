@@ -1,0 +1,55 @@
+<form [formGroup]="personFormGroup" (ngSubmit)="onSubmit()">
+
+    <label class="label">
+        <span class="labelName">Name</span>
+        <input type="text" formControlName="name">
+    </label>
+
+
+    <label class="label">
+        <span class="labelName">Surname</span>
+        <input type="text" formControlName="surname">
+    </label>
+
+    <label class="label">
+        <span class="labelName">Age</span>
+        <input type="number" formControlName="age">
+    </label>
+
+    <label class="label">
+        <span class="labelName">Password</span>
+        <input type="password" formControlName="password">
+    </label>
+
+     <fieldset formGroupName="address"> <!--formGroupName to odwołanie do grupy w grupie -->
+        <legend>Address</legend>
+        <label class="label">
+            <span class="labelName">City</span>
+            <input type="text" formControlName="city">
+        </label>
+
+        <label class="label">
+            <span class="labelName">Street</span>
+            <input type="text" formControlName="street">
+        </label>
+
+        <label class="label">
+            <span class="labelName">Postcode</span>
+            <input type="text" formControlName="postcode">
+        </label>
+
+    </fieldset>
+
+    <label class="label">
+        <span class="labelName">e-mail</span>
+        <input type="email" formControlName="email">
+    </label>
+
+    <label class="label">
+        <span class="labelName">Phone number</span>
+        <input type="text" formControlName="phoneNumber">
+    </label>
+
+    <button type="submit">send</button>
+
+</form>
