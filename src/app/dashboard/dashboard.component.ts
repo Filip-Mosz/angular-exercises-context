@@ -13,7 +13,7 @@ export class DashboardComponent implements OnInit {
 
   ngOnInit(): void {
     this.personFormGroup = new FormGroup({
-      name: new FormControl(),
+      name: new FormControl(), //name: new FormControl('') w nawiasie można podać wartość predefiniowaną
       surname: new FormControl(),
       age: new FormControl(),
       password:new FormControl(),      
@@ -23,8 +23,12 @@ export class DashboardComponent implements OnInit {
         postcode: new FormControl()
       }),
       email: new FormControl(),
-      phoneNumber: new FormControl
-    }    );
+      phoneNumber: new FormControl,
+      agreeForContact: new FormControl(),
+      isExercising: new FormControl(),
+      favouredSport: new FormControl(),
+      remarks:new FormControl()
+    });
 
     this.personFormGroup.valueChanges
       .subscribe((data: any) => console.log(data));

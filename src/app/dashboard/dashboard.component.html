@@ -50,6 +50,35 @@
         <input type="text" formControlName="phoneNumber">
     </label>
 
+    <label class="label">
+        <span class="labelName">Do you agree for contact?</span>
+        <input type="checkbox" formControlName="agreeForContact">
+    </label>
+    
+    <fieldset>
+        <legend>Do you exercise?</legend>
+        <label class="label">
+          <span class="label-name">Yes</span>
+          <input type="radio" formControlName="isExercising" [value]="true">
+        </label>
+        <label class="label">
+          <span class="label-name">No</span>
+          <input type="radio" formControlName="isExercising" [value]="false">
+        </label>
+      </fieldset>
+
+      <label class="label">
+          <span class="labelName"> Your favourite sport: 
+              <select formControlName="favouredSport">
+                  <option value="soccer">Soccer</option>
+                  <option value="volleyball">Volleyball</option>
+                  <option value="is lazy bastard">TV watching</option>
+              </select>
+          </span>
+      </label>
+
+      <textarea formControlName="remarks" placeholder="Your remarks" cols="50" rows="10"></textarea>
+
     <button type="submit">send</button>
 
 </form>
