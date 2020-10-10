@@ -1,0 +1,8 @@
+<div>
+    <a *ngFor="let countryButton of countryButtons" 
+        [href]="countryButton.link"
+        target="_blank"
+    >
+        link to: {{ countryButton.name }}
+    </a>
+</div>

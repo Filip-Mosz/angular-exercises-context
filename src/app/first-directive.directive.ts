@@ -22,7 +22,7 @@ export class FirstDirectiveDirective implements OnInit{
   };
 
   ngOnInit(): void {
-    this.elementRef.nativeElement, "background-color", "black"
+    this.renderer.setStyle(this.elementRef.nativeElement, "background-color", this.backgroundColor);
   }
 
 }

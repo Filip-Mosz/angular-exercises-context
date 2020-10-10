@@ -11,6 +11,8 @@ export class UserComponent {
   @Input() index: number;
   @Output() delete: EventEmitter<number> = new EventEmitter<number>();
 
+   public today = new Date();
+
 onDeleteButtonClick(): void {
   this.delete.emit(this.user.id);
 }

@@ -6,6 +6,9 @@ import { UsersComponent } from './users/users.component';
 import { UserComponent } from './user/user.component';
 import { FirstDirectiveDirective } from './first-directive.directive';
 import { SetBackgroudDirectiveDirective } from './set-backgroud-directive.directive';
+import { ModuloPipe } from './modulo.pipe';
+import { ToUppercasePipe } from './to-uppercase.pipe';
+import { CountriesComponent } from './countries/countries.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +16,10 @@ import { SetBackgroudDirectiveDirective } from './set-backgroud-directive.direct
     UsersComponent,
     UserComponent,
     FirstDirectiveDirective,
-    SetBackgroudDirectiveDirective
+    SetBackgroudDirectiveDirective,
+    ModuloPipe,
+    ToUppercasePipe,
+    CountriesComponent
   ],
   imports: [
     BrowserModule

@@ -1,7 +1,7 @@
 <div class="user" [appSetBackgroudDirective]="index">
     <p [appFirstDirective]="'blue'" [backgroundColor]="'yellow'">
         <span>name: </span>
-        <span>{{ user.name }}</span>
+        <span>{{ user.name | toUppercase }}</span>
     </p>
     <p>
         <span>phone number: </span>
@@ -11,5 +11,7 @@
         <span>email: </span>
         <span>{{ user.email }}</span>
     </p>
-    <button (click)="onDeleteButtonClick">!Delete!</button>
+    <!-- <p>{{ user | json }}</p> -->
+    <p>{{ 32 | modulo: 5}}</p>
+    <button (click)="onDeleteButtonClick()">!Delete!</button>
 </div>
