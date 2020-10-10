@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CommunicationService } from '../communication.service';
 import { CountriesService } from '../countries-service.service';
 import { CountryButton } from "../countries/country-button.interface"
 
@@ -11,13 +12,20 @@ import { CountryButton } from "../countries/country-button.interface"
 export class CountriesComponent implements OnInit {
   public countryButtons: CountryButton[];
 
-  constructor(private countriesService: CountriesService) { }
+  constructor(private countriesService: CountriesService,
+    private communicationService: CommunicationService) { }
 
   ngOnInit(): void {
     this.countriesService.getCountryButtons()
     .subscribe((buttons: CountryButton[]) => {
       this.countryButtons = buttons;
     });
+
+    this.communicationService.messageSubject.next("Hello from countries component");
   }
 
+  public onSendMessageClick(): void {
+    this.communicationService.messageSubject.next("button clicked");    //  kopia z app.components
+    }
+  
 }

@@ -9,7 +9,7 @@ export class AppServiceService {
 public countries: string[] = [
   "Poland",
   "Rohan",
-  "Deutchland"
+  "Deutschland"
 ];
 
 public getCountries(): Observable<string[]> {
